@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vintage India Culture</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Vintage India Culture</h1>
+    <p>Discover the cultural tapestry of Indian states — food, festivals, arts, and iconic places.</p>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search state (e.g., Rajasthan, Kerala, Punjab)"/>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="north">North</option>
+        <option value="south">South</option>
+        <option value="east">East</option>
+        <option value="west">West</option>
+        <option value="northeast">North East</option>
+        <option value="central">Central</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="states-container" class="grid">
+    <!-- Cards injected by script.js -->
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalCulture">
+      <button id="closeModal" class="close-btn" aria-label="Close">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" alt="State cultural image"/>
+      <p id="modalCulture" class="lead"></p>
+
+      <div class="pill-row" id="modalPills"></div>
+
+      <div class="specials">
+        <h4>Specialities</h4>
+        <ul id="modalSpecialities"></ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="about">
+  <h2>About Us</h2>
+  <p>
+    Welcome to the <strong>Indian Culture Gallery</strong> — a celebration of India's rich and diverse heritage.  
+    Our mission is to showcase the unique traditions, food, festivals, and landmarks of every Indian state.  
+    From the snow-capped Himalayas to the sun-kissed beaches of the South, every region tells a story of unity in diversity.
+  </p>
+  <p>
+    This platform is a tribute to the colors, music, dance, and flavors that make India truly incredible.  
+    Whether you are a traveler, student, or culture enthusiast, we hope this gallery inspires you to explore and appreciate the beauty of our land.
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Indian Culture Gallery. All Rights Reserved by India.</p>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
